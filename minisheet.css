@@ -1,0 +1,145 @@
+body {
+	margin:0px;
+}
+
+/* front side of widget */
+#box_bl, #box_br, #box_tl, #box_tr {
+	background:url('Images/bg-front.png') no-repeat;
+	height:50%;
+	position:absolute;
+	width:50%;
+	z-index:0;
+}
+#box_bl {
+	background-position:0 100%;
+	bottom:0;left:0;
+}
+#box_br {
+	background-position:100% 100%;
+	bottom:0;right:0;
+}
+#box_tl {
+	left:0;top:0;
+}
+#box_tr {
+	background-position:100% 0;
+	right:0;top:0;
+}
+
+#content {
+	position:relative;
+	z-index:100;
+}
+
+#data {
+	background:#FFF;
+	border:1px solid #EEE;
+	border-spacing:0;
+	border-collapse:collapse;
+	padding:6px;
+	table-layout:fixed;
+}
+#data div, #data input {
+	font:13px/1em Arial, sans-serif;
+	text-align:left;
+	width:70px;
+}
+#data input {
+	width:76px;
+}
+#data div {
+	border:1px solid #FFF;
+	cursor:default;
+	min-height:13px;
+	padding:5px 2px;
+}
+#data td {
+	height:25px;
+	padding:0;
+}
+#data td+td {
+	border-left:1px solid #DDD;
+	border-top:1px solid #DDD;
+}
+#data th+th {
+	border-left:1px solid #CCC;
+}
+
+#data .colLabel, #data .corner, #data .rowLabel {
+	background:url('Images/bg-labels.png') no-repeat;
+	font:13px/1em Times, "Times New Roman", serif;
+	text-shadow:0 1px 0 #F7F7F7;
+}
+#data .colLabel {
+	background-position:100% 0;
+	width:74px;
+}
+#data .rowLabel {
+	background-position: 0 100%;
+	border-top:1px solid #CCC;
+	text-align:center;
+	width:16px;
+}
+
+#data .hilight {
+	background:#EEE;
+}
+#data .select {
+	border:1px solid #55A666!important;
+}
+#data .number {
+	text-align:right;
+}
+
+#infoButton {
+	position: absolute;
+	bottom:0; right:0;
+	height:13px;
+	width:13px;
+}
+
+#inputline {
+	border:1px solid #EEE;
+	margin:0;
+	padding:3px 1px;
+	width:324px;
+}
+#inputline:focus {
+	background-color:#FFF;
+	outline:0;
+}
+
+#window {
+	padding:9px 13px 17px 13px;
+	position:relative;
+	width:324px;
+}
+
+/* back side of widget */
+#back {
+    display:none;
+}
+#settings {
+	background:url('Images/bg-back.png') no-repeat;
+	display:block;
+	height:220px;
+	margin:0 auto;
+	position:absolute;
+	left:0px; top:0px;
+	width:350px;
+}
+#doneButton {
+	position: absolute;
+	right: 21px;
+	bottom: 21px;
+}
+#logo {
+	display:block;
+	margin-left:-108px;
+	position:absolute;
+	left:50%;top:40%;
+	width:215px;
+}
+#logo img {
+	border:none;
+}

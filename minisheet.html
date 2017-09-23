@@ -1,0 +1,114 @@
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" content="text/html; charset=utf-8">
+    <title>MiniSheet</title>
+    <link rel="stylesheet" href="minisheet.css">
+    <script src="file:///System/Library/WidgetResources/AppleClasses/AppleAnimator.js" charset="utf-8"></script>
+    <script src="file:///System/Library/WidgetResources/AppleClasses/AppleButton.js" charset="utf-8"></script>
+    <script src="file:///System/Library/WidgetResources/AppleClasses/AppleInfoButton.js" charset="utf-8"></script>
+</head>
+<body onload="load();">
+    <div id="front">
+        <div id="window">
+            <div id="box_tl"></div><div id="box_tr"></div>
+            <div id="box_bl"></div><div id="box_br"></div>
+            <div id="content">
+                <input id="inputline" type="text" name="inputline">
+                <table id="data">
+                    <colgroup>
+                        <col>
+                        <col>
+                        <col>
+                        <col>
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th class="corner"></th>
+                            <th id="colA" class="colLabel">A</th>
+                            <th id="colB" class="colLabel">B</th>
+                            <th id="colC" class="colLabel">C</th>
+                            <th id="colD" class="colLabel">D</th>
+                            <th id="colE" class="colLabel">E</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td id="row1" class="rowLabel">1</td>
+                            <td id="A1"></td>
+                            <td id="B1"></td>
+                            <td id="C1"></td>
+                            <td id="D1"></td>
+                            <td id="E1"></td>
+                        </tr>
+                        <tr>
+                            <td id="row2" class="rowLabel">2</td>
+                            <td id="A2"></td>
+                            <td id="B2"></td>
+                            <td id="C2"></td>
+                            <td id="D2"></td>
+                            <td id="E2"></td>
+                        </tr>
+                        <tr>
+                            <td id="row3" class="rowLabel">3</td>
+                            <td id="A3"></td>
+                            <td id="B3"></td>
+                            <td id="C3"></td>
+                            <td id="D3"></td>
+                            <td id="E3"></td>
+                        </tr>
+                        <tr>
+                            <td id="row4" class="rowLabel">4</td>
+                            <td id="A4"></td>
+                            <td id="B4"></td>
+                            <td id="C4"></td>
+                            <td id="D4"></td>
+                            <td id="E4"></td>
+                        </tr>
+                        <tr>
+                            <td id="row5" class="rowLabel">5</td>
+                            <td id="A5"></td>
+                            <td id="B5"></td>
+                            <td id="C5"></td>
+                            <td id="D5"></td>
+                            <td id="E5"></td>
+                        </tr>
+                        <tr>
+                            <td id="row6" class="rowLabel">6</td>
+                            <td id="A6"></td>
+                            <td id="B6"></td>
+                            <td id="C6"></td>
+                            <td id="D6"></td>
+                            <td id="E6"></td>
+                        </tr>
+                        <tr>
+                            <td id="row7" class="rowLabel">6</td>
+                            <td id="A7"></td>
+                            <td id="B7"></td>
+                            <td id="C7"></td>
+                            <td id="D7"></td>
+                            <td id="E7"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!--					<button onclick="saveMiniSheet()">Save</button> -->
+                <div id="infoButton"></div>
+            </div><!-- content -->
+        </div><!-- window -->
+    </div>
+    <!-- front -->
+    <div id="back">
+        <img src="Images/bg-back.png" usemap="#backsidemap" id="backImg">
+        <div id="settings">
+            <span id="logo">
+                <img onclick="openLink();" src="Images/cone_code_logo.png" width="215" height="54" alt="Cone Code Development">
+            </span>
+            <div id="doneButton"></div>
+        </div>
+    </div>
+    <!-- back -->
+    <script src="editcell.js"></script>
+    <script src="formula.js"></script>
+    <script src="minisheet.js"></script>
+</body>
+</html>

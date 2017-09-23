@@ -1,0 +1,20 @@
+version 1.0
+	added a link to the cone code website.
+	improved the widget logo.
+
+version 0.96
+	fixed the cell focus issues where selected cells didn't appear highlighted.
+	added a function that removes focus of cells when leaving the widget.
+
+version 0.95
+	fixed several formula bugs related to parenthesis.
+	added error handling for formulas that can not be calculated.
+	added a method to prevent formulas from being calculated twice on update.
+	fixed the back panel to display correctly when flipped for the first time.
+	improved the row and column header styles.
+
+version 0.90
+	created the first functioning version of the minisheet widget.
+
+version 0.10
+	created an web browser version of the widget.
