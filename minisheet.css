@@ -3,8 +3,9 @@ body {
 }
 
 /* front side of widget */
+/* BACKGROUND BOX */
 #box_bl, #box_br, #box_tl, #box_tr {
-	background:url('Images/bg-front.png') no-repeat;
+	background:mediumseagreen;
 	height:50%;
 	position:absolute;
 	width:50%;
@@ -31,26 +32,29 @@ body {
 	z-index:100;
 }
 
+
+/* TABLE */
 #data {
-	background:#FFF;
-	border:1px solid #EEE;
+	background:white;
+	border:2px solid lightslategray;
 	border-spacing:0;
 	border-collapse:collapse;
 	padding:6px;
 	table-layout:fixed;
 }
+
 #data div, #data input {
-	font:13px/1em Arial, sans-serif;
+	font:13px/1em monospace;
 	text-align:left;
-	width:70px;
 }
 #data input {
-	width:76px;
+	width:98px;
 }
+
 #data div {
 	border:1px solid #FFF;
 	cursor:default;
-	min-height:13px;
+	min-height:15px;
 	padding:5px 2px;
 }
 #data td {
@@ -66,26 +70,26 @@ body {
 }
 
 #data .colLabel, #data .corner, #data .rowLabel {
-	background:url('Images/bg-labels.png') no-repeat;
-	font:13px/1em Times, "Times New Roman", serif;
-	text-shadow:0 1px 0 #F7F7F7;
+	background: lightslategray;
+	font:13px/1em "Avenir", sans-serif;
+	color: darkslategrey;
 }
 #data .colLabel {
 	background-position:100% 0;
-	width:74px;
+	width:100px;
 }
 #data .rowLabel {
 	background-position: 0 100%;
 	border-top:1px solid #CCC;
 	text-align:center;
-	width:16px;
+	width:18px;
 }
 
 #data .hilight {
-	background:#EEE;
+	background: mintcream;
 }
 #data .select {
-	border:1px solid #55A666!important;
+	border:1px solid darkslategrey !important;
 }
 #data .number {
 	text-align:right;
@@ -100,9 +104,10 @@ body {
 
 #inputline {
 	border:1px solid #EEE;
+	font-family: monospace;
 	margin:0;
 	padding:3px 1px;
-	width:324px;
+	width:500px;  /* width of input bar */
 }
 #inputline:focus {
 	background-color:#FFF;
@@ -112,7 +117,7 @@ body {
 #window {
 	padding:9px 13px 17px 13px;
 	position:relative;
-	width:324px;
+	width:500px; /* width of widget */
 }
 
 /* back side of widget */

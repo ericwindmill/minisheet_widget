@@ -15,7 +15,7 @@ Cell.prototype.moveRight = function() {
 	if (chr > 68) {
 		chr = 65;
 		num++;
-		if (num > 6) {
+		if (num > 8) {
 			num = 1;
 		}
 	}
@@ -26,7 +26,7 @@ Cell.prototype.moveDown = function() {
 	var chr = this.id.charCodeAt(0),
 		num = this.row;
 	num++;
-	if (num > 6) {
+	if (num > 7) {
 		num = 1;
 		chr++;
 		if (chr > 68) {
@@ -44,7 +44,7 @@ Cell.prototype.moveLeft = function() {
 		chr = 68;
 		num--;
 		if (num < 1) {
-			num = 6;
+			num = 7;
 		}
 	}
 	return String.fromCharCode(chr) + num;
